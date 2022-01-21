@@ -16,10 +16,11 @@
 .image {
     width: 100%;
     position: relative;
+    filter: brightness(1.1);
 }
 
 .image::before {
-    content: "New Video 🕹";
+    content: "' New Video 🥳 '";
     color: #fff;
     font-size: 3em;
     display: flex;
