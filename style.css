@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 100%;
+    position: relative;
+}
+
+.image::before {
+    content: "New Video 🕹";
+    color: #fff;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.325);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.517);
+    background: white;
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: -20px;
+    z-index: 1;
+}
+
+.btn {
+    padding: 15px 30px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 20px;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-radius: 10px;
+    transition: .7s;
+}
+
+.orange {
+    background-color: orangered;
+    border: none;
+    color: white;
+    transition: .7s;
+}
+
+.orange:hover {
+    border: 1px solid orangered;
+    background: none;
+    color: orangered;
+    transition: .7s;
+}
+
+.oorange {
+    border: 1px solid orangered;
+    background-color: none;
+    color: orangered;
+    transition: .7s;
+}
+
+.oorange:hover {
+    background-color: orangered;
+    border: none;
+    color: white;
+    transition: .7s;
+}
+
+p {
+    letter-spacing: 2px;
+    width: 80%;
+    margin: 20px;
+}
