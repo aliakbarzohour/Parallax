@@ -1,3 +1,4 @@
+// add a listener for all window
 window.addEventListener("scroll", function() {
     const parallax = document.querySelector("img");
     let scrollP = window.pageYOffset;
